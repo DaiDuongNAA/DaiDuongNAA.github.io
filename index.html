@@ -2,53 +2,28 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>|Google|</title>
+        <title>CLICK!!!</title>
     </head>
     <style>
-        #Google {
-            color:rgb(7, 86, 222);
-            padding :0px;
-            font-size:30px;
-            font-family:Times New Roman;
-            text-shadow:5px 5px 4px rgb(186, 184, 184);
-        }
-        .btn {
-  border: none; /* Remove borders */
-  color: white; /* Add a text color */
-  padding: 14px 28px; /* Add some padding */
-  cursor: pointer; /* Add a pointer cursor on mouse-over */
-}
-
-
+    
     </style>
     <body>
-<a href="https://www.gmail.com"style="text-decoration: none;"><h1 id="Google" ><div><span style="color:rgb(7, 86, 222)">G</span><span style= "color: rgb(222, 57, 63)">o</span><span style="color: rgb(242, 200, 12)">o</span>g<span style="color: rgb(3, 163, 43)">l</span><span style="color:rgb(222, 56, 64)">e</span></div> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Gmail_Icon.svg/200px-Gmail_Icon.svg.png" alt="Gmail" width="79" height="51"></h1></a>
-<button></button>
-    
+    <a href="https://www.apple.com"><p>Click!</p></a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+  $("p").on({
+  mouseenter: function(){
+    $(this).css("background-color", "lightgray");
+  }, 
+  mouseleave: function(){
+    $(this).css("background-color", "lightblue");
+  }, 
+  click: function(){
+    $(this).css("background-color", "green");
+  } 
+});
 
-<meta name="google-signin-scope" content="profile email">
-      <meta name="google-signin-client_id" content="MY_CLIENT_ID_ON_GOOGLE_DEV.apps.googleusercontent.com">
-      <!-- To integrate Google Sign-in -->
-      <script src="https://apis.google.com/js/api.js"></script>
-      <script src="https://apis.google.com/js/platform.js" async defer></script>
-  
-      <div class="g-signin2" data-onsuccess="onSignIn"></div>
-    
-        <div class="col s12 m6 offset-m3 center-align">
-    <a class="oauth-container btn darken-4 white black-text" href="https://accounts.google.com/signup/v2/webcreateaccount?service=accountsettings&continue=https%3A%2F%2Fmyaccount.google.com%2F&gmb=exp&biz=false&flowName=GlifWebSignIn&flowEntry=SignUp">
-        <div class="left">
-            <img width="20px" style="margin-top:7px; margin-right:8px" alt="Google sign-in" 
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
-        </div>
-        Create Account
-    </a>
-</div>
-
-<!-- Compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-
-<!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+</script>
 
     </body>
 </html>
